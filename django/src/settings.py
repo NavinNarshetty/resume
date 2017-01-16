@@ -31,16 +31,16 @@ ALLOWED_HOSTS = []
 
 EMAIL_BACKEND ='django_smtp_ssl.SSLEmailBackend'#'django.core.mail.backends.console.EmailBackend'
 # EMAIL_HOST = 'smtp.gmail.com'
-# EMAIL_HOST_USER = 'navindjango@gmail.com'
-# EMAIL_HOST_PASSWORD = 'navin123'
+# EMA'
+# EMAIL_HOST_PASSWORD = ''
 # EMAIL_USE_TLS = True 
 # EMAIL_PORT = 465
 # DEFAULT_FROM_EMAIL = EMAIL_HOST_USER
 
 EMAIL_HOST='smtp.sendgrid.com'
-EMAIL_HOST_USER='navindjango19'
-EMAIL_MAIN='jobfornavin@yourwebsite.com'
-EMAIL_HOST_PASSWORD='navin1913'
+EMAIL_HOST_USER=''
+EMAIL_MAIN=''
+EMAIL_HOST_PASSWORD=''
 EMAIL_PORT=465
 EMAIL_USE_TLS=True
 
