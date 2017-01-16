@@ -1,0 +1,145 @@
+
+
+<!doctype html> 
+<html> 
+<head> <title>Resume</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+<link rel="stylesheet" href="https://s3.amazonaws.com/codecademy-content/projects/bootstrap.min.css"> 
+<link href='https://fonts.googleapis.com/css?family=Libre+Baskerville:400,700,400italic' rel='stylesheet' type='text/css'> 
+<style> 
+.mySlides {display:none;}
+.slide {display:none;
+height: 200px;
+margin-bottom: 60px;}
+.name  p{
+    text-align: center;
+    font-size: 26px;
+}
+
+html, body {margin: 0; padding: 0; font-family: 'Libre Baskerville', sans-serif; } 
+.container {max-width: 940px; margin: 0 auto; } 
+/* Header */ .header {padding: 30px 0px 80px; } 
+.header h1 {font-size: 20px; } 
+.nav li a {color: #333; margin:0; border:0px; } 
+/* Jumbotron */ .jumbotron {background-color: #fff; } 
+.jumbotron h2 {font-size: 30px; margin-bottom: 120px; } 
+.jumbotron h2 span {color:#ffc200; } 
+.jumbotron p {text-shadow: 0 0; font-size: 16px; color: #666; margin-bottom: 0; } 
+/* Banner */ .banner {background-color: #333; color: #fff; padding: 20px; text-align: center; } 
+/* Image section */ .image-section h2 {width: 300px; margin: 200px auto; font-size: 24px; padding: 5px; } 
+.image-section {position:relative; top:100px; height: 800px; color: #fff; } 
+.image-section h2 {margin-bottom: 40px; } 
+.wrapper {margin-top: 80px; margin-left: 600px; } 
+.btn {border-radius:0; margin-top: 40px; background-color:#ffc200; padding: 10px; color: #000; font-size: 14px; width:200px; } 
+/* Cards */ .cards {background:#ffc200; padding: 80px 0; } 
+.cards h2 {margin: 20px 0 60px 0; text-align: center; } 
+.cards img {margin-bottom: 25px; } /* Footer */ 
+.footer {padding: 60px 0px; background-color: #000; color: #fff; } 
+.footer h3 {font-size: 20px; } 
+.footer img {width: 24px; margin-top:10px; margin-right:10px; } 
+.footer p {font-size:12px; margin-bottom: 0; } 
+@media (max-width: 992px) { .col-md-4 { margin: 0 auto 0; text-align: center; width: 100%; } .cards img { width: 60%; } } 
+@media (max-width: 500px) { .header h1 { text-align: center; } .nav li { text-align: center; width: 100%; } .cards img { width: 100%; } }
+ </style> 
+ </head> 
+
+ <body> 
+ <div class="header">
+ <div class="container">
+ <div class="row"> 
+ <div class="col-md-3">
+    <h1>Objective</h1> 
+ </div> 
+<div class="col-md-9">
+    <ul class="nav nav-tabs pull-right"> 
+        <li><a href='{%url "about" %}'>About Me</a></li> 
+        <li><a href='{%url "exprience"%}'>Exprience</a></li>
+        <!-- <li><a href="#">Our Team</a></li> -->
+        <li><a href='{% url "contact" %}'>Contact Me</a></li>
+    </ul> 
+</div>
+</div> 
+</div> 
+</div> 
+<div class="jumbotron"> 
+    <div class="container"> 
+        <h2> To be able to work in your organization  as a<span>Python Django Developer</span> <br/> where I can fully utilize my skills in HTML,CSS,Python, Django  
+        <br/> and Java technologies.</h2> 
+    </div> 
+</div> 
+
+    <div class="banner">
+    <div class="container"> 
+        <h1>The Bottom Line.</h1> 
+        <p>“Python Django Developer Looking For Early Stage Startup”<p>
+    </div>
+    </div> 
+    <div class="cards">
+    <div class="container"> 
+        <h2>My Expertise.</h2> 
+<!-- <div class="w3-content w3-section" style="max-width:500px">
+  <img class="mySlides" src="https://s3.amazonaws.com/codecademy-content/projects/headlines/p6.jpg" style='width:100%'>
+  <img class="mySlides" src="/media/newhtml.jpg" style="width:100%">
+  <img class="mySlides" src="/media/python.jpg" style="width:100%">
+</div> -->
+        <div class='slide'>
+            <div class='name'>
+                <h2>Language</h2>
+                        <p>Python</p>
+                <h2>FrameWork</h2>
+                        <p>Django</p>    
+            </div>
+        </div>
+        <div class='slide'>
+            <div class='name'>
+                <h2>Front-End</h2>
+                        <p>HTML</p>
+                        <p>CSS</p>
+                        <p>Jquery</p>
+                        <p>Bootstrap</p>
+            </div>
+        </div>
+        <div class='slide'>
+            <div class='name'>
+                <h2>Deployment</h2>
+                        <p>AWS</p>
+                        <p>Webfaction</p>
+
+            </div>
+
+
+        </div>
+    </div> 
+    </div> 
+ <script>
+var myIndex = 0;
+carousel();
+
+function carousel() {
+    var i;
+    var x = document.getElementsByClassName("slide");
+    for (i = 0; i < x.length; i++) {
+       x[i].style.display = "none";  
+    }
+    myIndex++;
+    if (myIndex > x.length) {myIndex = 1}    
+    x[myIndex-1].style.display = "block";  
+    setTimeout(carousel, 2000); // Change image every 2 seconds
+}
+</script>    
+ 
+<div class="footer"> 
+<div class="container">
+    <div class="row"> 
+    <div class="align-left col-md-4">
+        <h3>Navin Narshetty</h3>
+        <p>Shiv Sharan Nilaya,sec-14,Plot-12 </p> 
+        <p>Navi-mumbai</p> 
+        <p>410218</p> 
+    </div>
+    </div> 
+</div> 
+</div> 
+</body>
+ </html>
